@@ -36,7 +36,6 @@ class Helper  {
       $tasks1 = Task::select('title','description','due_date','created_by')->where('assigned_to' , $userId)
               ->whereYear('created_at', $year)
               ->whereMonth('created_at',$i+1);
-        //echo $tasks1->count();
         $tasks2 = clone $tasks1;
         $tasks3 = clone $tasks1;
         $tasks4 = clone $tasks1;
