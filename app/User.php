@@ -21,11 +21,13 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $fillable = [
         'name', 'email','password','created_by','role'
     ];
-    public function assignedtasks(){
-        return $this->hasMany('App\Task','assignor');
+    public function assignedtasks()
+    {
+        return $this->hasMany('App\Task', 'assignor');
     }
-    public function gotassignedtasks(){
-        return $this->hasMany('App\Task','assignee');
+    public function gotassignedtasks()
+    {
+        return $this->hasMany('App\Task', 'assignee');
     }
     /**
      * The attributes excluded from the model's JSON form.

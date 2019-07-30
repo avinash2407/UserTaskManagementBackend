@@ -24,7 +24,7 @@ class ResetPasswordEmail extends Mailable
      *
      * @return void
      */
-    public function __construct(User $user,$token)
+    public function __construct(User $user, $token)
     {
         $this->user = $user;
         $this->token= $token;

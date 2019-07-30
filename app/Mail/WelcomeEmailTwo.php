@@ -24,7 +24,7 @@ class WelcomeEmailTwo extends Mailable
      *
      * @return void
      */
-    public function __construct(User $user,User $creator)
+    public function __construct(User $user, User $creator)
     {
         $this->user = $user;
         $this->creator= $creator;

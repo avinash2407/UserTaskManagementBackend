@@ -26,7 +26,7 @@ class TaskAssignedEmail extends Mailable
      *
      * @return void
      */
-    public function __construct(User $user,User $creator,Task $task)
+    public function __construct(User $user, User $creator, Task $task)
     {
         $this->user = $user;
         $this->creator= $creator;
